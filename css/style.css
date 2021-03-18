@@ -1,0 +1,515 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li  {
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*----==========Nav Part Css Goes Bellow---==========*/
+
+
+.container{
+    width:1170px;
+    margin:0 auto;
+}
+.nav{
+    z-index: 999;
+    width:100%;
+    top:0;
+    left:0;
+    position:fixed;
+    transition: all linear 0.4s;
+}
+.nav-bg{
+    background:#5caccf;
+
+}
+
+.nav-bg .menu ul li{
+    line-height: 60px;
+}
+
+.nav-bg .logo{
+    padding-top: 20px;
+    transition: all linear 0.4s;
+}
+
+
+
+.nav-main{
+    display:flex;
+    justify-content:space-between;
+}
+
+.logo{
+    width:200px;
+    padding-top: 30px;
+}
+
+
+.menu ul li {
+    padding-left: 40px;
+    display: inline-block;
+    line-height: 76px;
+    
+}
+.menu ul li a{
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    color:#ffffff;
+}
+
+
+/*----==========Banner Part Css Goes Bellow---==========*/
+
+#Banner{
+    background:url(/images/banner.png);
+    width:100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 210px;
+    padding-bottom: 143px;
+    position: relative;
+}
+
+.banner-overly{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background:rgba(48, 51, 77, 0.897);
+}
+
+
+.banner-text h1{
+     text-align:center;
+
+}
+.banner-text h2{
+    text-align: center;
+}
+
+.text-main{
+    
+    position: relative;
+}
+.banner-text h1{
+    color:#ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.banner-text h2{
+    color:#ffffff;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 700;
+}
+.banner-text p{
+    text-align: center;
+    padding:0 50px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color:#ffffff;
+    padding-top: 14px;
+    padding-bottom: 80px;
+}
+.banner-btn {
+    text-align: center;
+}
+
+.banner-btn a {
+    background: #e84545;
+    padding: 20px 54px;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    color:#ffffff;
+    text-transform: uppercase;
+}
+/*----========== Servics Part Css Goes Bellow---==========*/
+#servics{
+  
+    padding-top: 96px;
+}
+
+.servics-main{
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.servics-iteam{
+    text-align: center;
+}
+
+.servics-iteam h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color:#2d3033;
+    text-transform: uppercase;
+    padding-top: 22px;
+    padding-bottom: 20px;
+}
+
+.servics-iteam p {
+    padding: 0 32px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#2d3033;
+    line-height: 21px;
+}
+
+
+/*----==========Gallery Part Css Goes Bellow---==========*/
+
+#gallary{
+  
+    padding-top: 60px;
+}
+
+.gal-main{
+    display: flex;
+   
+}
+
+.gal-iteam{
+    width:25%;
+    position: relative;
+
+}
+
+.gal-iteam img{
+   height: 100%;
+}
+.gal-overly{
+    position:absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: rgba(212, 64, 64, 0.884);
+     padding-top: 40%;
+    text-align: center;
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+
+.gal-iteam:hover .gal-overly{
+    opacity: 1;
+  
+}
+.gal-overly h3 {
+    align-self: center;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color:#ffffff;
+    text-transform: uppercase;
+
+}
+.gal-overly p{
+    align-self: center;
+    padding-top: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#ffffff;
+}
+
+
+/*----========== Team Part Css Goes Bellow---==========*/
+
+#team{
+    padding-top: 78px;
+   
+}
+
+.team-main{
+    display: flex;
+    justify-content: space-between;
+}
+.team-iteam{
+    width:270px;
+}
+
+.team-iteam h4{
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color:#2d3033;
+}
+
+.team-iteam h5{
+    padding-top: 8px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    color:#e84545;
+    text-transform: uppercase;
+
+}
+.team-iteam p{
+    padding-top: 15px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:#6c7279;
+   line-height: 21px;
+
+}
+.socila-i{
+    padding-top: 15px;
+}
+
+.socila-i i {
+    border: 2px solid #e8ecee;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color:#e6e8e9;
+}
+
+
+/*----========== FeedBack Part Css Goes Bellow---==========*/
+
+
+#feedBack{
+    padding-top: 78px;
+}
+
+.feed-main{
+    display: flex;
+}
+
+
+.feed-iteam-left{
+    width:50%;
+
+}
+.feed-iteam-left img{
+    width:100%;
+}
+
+.feed-iteam-right{
+    width:50%;
+    background: #53354a;
+   height: fit-content;
+}
+
+.feed-iteam-right h3{
+    padding: 0px 72px;
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: 36px;
+    color:#ffffff;
+    font-weight: 400;
+    padding-top: 100px;
+    padding-left: 60px;
+}
+
+.feed-iteam-right p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color:#ffffff;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-left: 60px;
+}
+.circle{
+    padding-left:60px ;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 59px;
+}
+.circle ul li {
+    width: 15px;
+    height: 15px;
+    background: #755d6e;
+    border-radius: 50%;
+    line-height: 15px;
+    display: inline-block;
+    transition: all linear 0.4s;
+}
+
+.circle ul li:hover{
+    background: #ffffff;
+}
+
+
+/*----========== Download Part Css Goes Bellow---==========*/
+
+
+#download{
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+
+
+.download-text{
+    text-align: center;
+}
+.download-text h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 28px;
+    color:#2d3033;
+    font-weight: 400;
+}
+
+.download-text p{
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    color:#2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 10px ;
+    padding-bottom: 30px;
+}
+
+.download-text a{
+    padding: 18px 86px;
+    background: #e84545;
+    color:#fdf3f3;
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/*----========== Footer Part Css Goes Bellow---==========*/
+
+#footer{
+    padding-top: 56px;
+    background: rgba(58, 62, 100, 0.945);
+    padding-bottom: 100px;
+}
+
+.footer-main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-left{
+    width:230px;
+}
+
+
+.footer-main h3{
+    color:#ffffff;
+    text-transform:uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+   text-align: center;
+   padding-bottom: 12px;
+}
+
+.footer-left p {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #83859d;
+    padding: 0px 32px;
+    color:#83859d;
+    line-height: 22.5px;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+
+.footer-center{
+    width: 230px;
+}
+
+.footer-right{
+    width: 370px;
+}
+
+.footer-right p{
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: #83859d;
+    padding: 0px 32px;
+    color:#83859d;
+    line-height: 22.5px;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.social{
+    text-align: center;
+}
+
+.social i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    border:2px solid #ffffff;
+    color:#ffffff;
+}
+
+
+
+/*----========== CopyRight Part Css Goes Bellow---==========*/
+
+#copyRight{
+    background: #313454;
+   padding-top: 16px;
+   padding-bottom: 16px;
+}
+
+.copy-right-text{
+    padding: 0px 386px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: #83859d;
+    line-height: 22.5px;
+    font-size: 14px;
+    font-weight: 400px;
+
+}
+
+.copy-right-text span{
+    color:#ffffff;
+}
+
+
+
+
+/*----==========Arrow To Btm Part Css Goes Bellow---==========*/
+
+.back-top i{
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background: orange;
+    border-radius: 50%;
+    line-height: 50px;
+    bottom:12px;
+    right: 12px;
+    position: fixed;
+    z-index: 9999;
+    color: #ffffff;
+}
